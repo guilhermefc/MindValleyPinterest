@@ -1,7 +1,7 @@
 package br.com.gfc.mindvalley_loading_lib
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import br.com.gfc.mindvalley_loading_lib.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +15,6 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
     }
+
 
 }
