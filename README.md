@@ -35,7 +35,8 @@ Adding "pull to refresh" is an advantage.
 Coding in "Kotlin" is an advantage.
 
 ## Download
-```gradle
+```
+gradle
 dependencies {
     implementation 'com.github.guilhermefc:MindValleyPinterest:1.0'
 }
@@ -43,11 +44,13 @@ dependencies {
 
 ## Usage
 Create a Downloadable object passing an url and a listener and wait for it`s resposne :)
-```val downloadable = DownloadableImage(it, getListener())
+```
+val downloadable = DownloadableImage(it, getListener())
 DownloadProvider.init(downloadable)
 ```
 
-```private fun getListener(): DownloadStatusInterface {
+```
+private fun getListener(): DownloadStatusInterface {
         return object : DownloadStatusInterface {
             override fun onSuccess(downloadable: Downloadable) {
                 addEvent("DownloadProvider successful: " + downloadable.url)
