@@ -21,7 +21,7 @@ object DownloadProvider {
     private var mCacheQueue = PriorityQueue<String>()
 
 
-    fun getDownloadable(downloadable: Downloadable) {
+    fun init(downloadable: Downloadable) {
         if (hasOnCache(downloadable))
         else startDownload(downloadable)
     }
@@ -52,7 +52,7 @@ object DownloadProvider {
 
     private fun hasOnCache(downloadable: Downloadable): Boolean {
         if (mCacheResponse.containsKey(downloadable.url)) {
-            Log.e(getTagName(), "return by cache")
+            Log.i(getTagName(), "return by cache")
             downloadable.byteArray = mCacheResponse[downloadable.url]
             downloadable.statusListener.onSuccess(downloadable)
 

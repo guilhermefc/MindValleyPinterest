@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">mindvalley_loading_lib</string>
+    <string name="app_name">MindValley Pinterest</string>
+    <string name="image_loaded_to_test_library">Image loaded to test library</string>
+    <string name="title_home">home</string>
+    <string name="about">About</string>
+    <string name="logs_title">Service Logs</string>
 </resources>
