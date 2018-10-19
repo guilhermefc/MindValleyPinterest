@@ -4,9 +4,9 @@ Simple library to download JSON and images from web and cache on virtual device 
 It also contains an app to demonstrate it usage.
 
 ## Images
-[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_1.png">](https://github.com/guilhermefc/MindValleyPinterest)
-[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_2.png">](https://github.com/guilhermefc/MindValleyPinterest)
-[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_3.png">](https://github.com/guilhermefc/MindValleyPinterest)
+[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_1.png" width="300">](https://github.com/guilhermefc/MindValleyPinterest)
+[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_2.png" width="300">](https://github.com/guilhermefc/MindValleyPinterest)
+[<img src="https://raw.githubusercontent.com/guilhermefc/MindValleyPinterest/master/images/app_image_3.png" width="300">](https://github.com/guilhermefc/MindValleyPinterest)
 
 ## Goals
 
@@ -45,7 +45,7 @@ dependencies {
 ## Usage
 Create a Downloadable object passing an url and a listener and wait for it`s resposne :)
 ```
-val downloadable = DownloadableImage(it, getListener())
+val downloadable = DownloadableImage(url, getListener())
 DownloadProvider.init(downloadable)
 ```
 
